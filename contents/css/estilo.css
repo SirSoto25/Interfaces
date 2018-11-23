@@ -1,0 +1,78 @@
+header{
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom:2px solid blueviolet;
+    box-shadow: 10px 10px 0 0 grey;
+}
+body{
+    background-color: rgb(185, 190, 185);
+}
+h1{
+    font-family: fantasy;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+#formulario{
+    align-content: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+input:hover{
+    transition: 0.5s;
+    background-color: rgb(157, 158, 155);
+    width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+}
+textarea:hover{
+    background-color: rgb(157, 158, 155);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+input:focus{
+    border: 4px double grey;
+    width: 200px;
+    padding: 10px;
+}
+
+textarea:focus{
+    transition: .5s;
+    border: 4px double grey;
+    padding: 10px;
+}
+
+input[type=submit], input[type=reset]{
+    background-color: white;
+    color: black;padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: inherit;
+}
+input[type=submit]:hover{
+    transition: .4S;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 20px;
+    width: inherit;
+}
+input[type=reset]:hover{
+    transition: .4s;
+    background-color: #f44336;
+    color: white;
+    border-radius: 20px;
+    width: inherit;
+}
+
+input[type=radio], input[type=checkbox]{
+    width: inherit;
+}

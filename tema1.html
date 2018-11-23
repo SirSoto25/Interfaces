@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
     <link type="text/css" rel="stylesheet" href="./css/materialize.css">
+    <link type="text/css" rel="stylesheet" href="./css/stickyfooter.css">
     <title>Document</title>
 </head>
 
@@ -14,6 +15,9 @@
         <nav>
             <div class="nav-wrapper deep-purple accent-4 white-text">
                 <a href="#" class="brand-logo center">Tema 1</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -182,13 +186,13 @@
                                 A continuación pongo un ejemplo de como importar fuentes desde local y desde una fuente
                                 externa.
                                 <xmp>
-@font-face {
-font-family: 'Nombre de la familia';
-font-style: normal;
-font-weight: 400;
-src: url(Insertar URL)
-format('woff2');
-}
+                                    @font-face {
+                                    font-family: 'Nombre de la familia';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    src: url(Insertar URL)
+                                    format('woff2');
+                                    }
                                 </xmp>
                             </div>
                             <div class="card-action">
@@ -205,16 +209,14 @@ format('woff2');
                                 <span class="card-title">Iconos</span>
                                 Código de ejemplo de como importar iconos desde la web y local y como mostrarlos.
                                 <xmp>
-Importar desde web:
-<link href="La URL de la libreria de iconos"
-rel="stylesheet">
+                                    Importar desde web:
+                                    <link href="La URL de la libreria de iconos" rel="stylesheet">
 
-Importar desde local:
-<link href="Directorio de la libreria de iconos"
-rel="stylesheet">
+                                    Importar desde local:
+                                    <link href="Directorio de la libreria de iconos" rel="stylesheet">
 
-Mostrar Iconos:
-<i class="Clase Iconos">Nombre del icono</i>
+                                    Mostrar Iconos:
+                                    <i class="Clase Iconos">Nombre del icono</i>
                                 </xmp>
                             </div>
                             <div class="card-action">
@@ -227,8 +229,10 @@ Mostrar Iconos:
                         <div class="card deep-purple darken-1">
                             <div class="card-content white-text">
                                 <span class="card-title">Bootstrap y Materialize</span>
-                                Tanto Bootstrap como Materialize son dos frameworks que facilitan la tarea de maquetar y dar un estilo propio a las páginas web.
-                                A continuación dejo una guía y ejemplo de Bootstrap ya que el ejemplo de Materalize puede ser esta misma web.
+                                Tanto Bootstrap como Materialize son dos frameworks que facilitan la tarea de maquetar
+                                y dar un estilo propio a las páginas web.
+                                A continuación dejo una guía y ejemplo de Bootstrap ya que el ejemplo de Materalize
+                                puede ser esta misma web.
                             </div>
                             <div class="card-action">
                                 <a href="contents/bootstrap-4.pdf" target="_blank">Guía de Bootstrap</a>
@@ -241,6 +245,14 @@ Mostrar Iconos:
             </div>
         </article>
     </section>
+    <footer class="page-footer deep-purple accent-4 white-text">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Alejandro Jesús Soto Mejías
+                <a class="white-text right" href="aboutme.html">About Me</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
