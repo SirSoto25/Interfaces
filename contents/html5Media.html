@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <video id="myVideo" width="300" height="200" autoplay="autoplay" controls="controls" loop="loop" muted="muted">
+            <source src="/Media/howrude.mp4" type="video/mp4" />
+            <source src="/Media/howrude.ogg" type="video/ogg" />
+            <source src="/Media/howrude.webm" type="video/webm" />
+        </video>
+        <br>
+        <audio id="audio-1" controls="controls" loop="loop" muted="muted">
+            <source src="/Media/dead.mp3" type="audio/mp3" />
+            <source src="/Media/dead.ogg" type="audio/ogg" />
+            <source src="/Media/dead.wav" type="audio/wav">
+        </audio>
+        <br>
+        <canvas id="canvas-1" width="300" height="200"></canvas>
+        <script>
+            var canvas = document.getElementById('canvas-1');
+            var ctx = canvas.getContext('2d');
+            //draw to ctx object
+            //Sample code fills canvas width grey color:
+            ctx.fillStyle = '#FFEE00';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            //black rectangle
+            ctx.fillStyle = '#00EEFF';
+            ctx.fillRect(10, 10, 100, 100);
+            //outlined rectangle
+            ctx.strokeRect(150, 10, 100, 100);
+        </script>
+        <footer></footer>
+    </main>
+</body>
+
+</html>
